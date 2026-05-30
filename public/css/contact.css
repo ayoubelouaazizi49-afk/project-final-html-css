@@ -14,7 +14,10 @@ align-items: center;
 padding: 10px;
 margin: 20px auto;
 /* justify-content: center; */
-z-index: 10px;
+position: absolute;
+    z-index: 999;
+    left: 0;
+    top: 0;
 
 }
 .imageheader{
