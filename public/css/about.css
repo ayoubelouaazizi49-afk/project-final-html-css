@@ -1,7 +1,7 @@
 *{
   margin: 0px;
   padding: 0px;
-  /* box-sizing: border-box;   */
+  box-sizing: border-box;  
 }
 /* *header */
 .header{
@@ -45,6 +45,10 @@ width: 90px;
  border-radius: 20px;
  background-color: rgb(6, 141, 160);
  border: hidden;
+}
+.buttontheheader:hover{
+  background-color: black;
+  color: white;
 }
 /* *section1 */
 .section1{

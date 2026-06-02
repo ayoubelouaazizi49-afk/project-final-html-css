@@ -56,6 +56,10 @@
   background-color: rgb(6, 141, 160);
   border: hidden;
 }
+.buttontheheader:hover{
+  background-color: black;
+  color: white;
+}
 
 /* *section1 */
 .section1 {
