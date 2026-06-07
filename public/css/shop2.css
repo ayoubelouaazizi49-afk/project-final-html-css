@@ -16,11 +16,14 @@
 }
 
 .imageheader {
-    width: 90px;
+    width: 70px;
+    height: 50px;
+    margin-top: 20px;
 }
 
 .titre {
     font-weight: bold;
+    font-size: 10px;
 }
 
 .navigation {
@@ -36,7 +39,7 @@
 .div1 {
     display: flex;
     flex-direction: row;
-    font-size: 10px;
+    /* font-size: 10px; */
     gap: 10px;
 }
 
@@ -332,6 +335,9 @@
 
 .iconsfooter:hover {
     background-color: rgb(6, 141, 160);
+}
+html{
+    scroll-behavior: smooth;
 }
 
 /* *responsivity */
