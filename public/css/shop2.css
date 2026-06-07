@@ -342,17 +342,55 @@ html{
 
 /* *responsivity */
 @media(max-width:320px) {
-    .header {
-        display: flex;
-       flex-direction: column; 
-        width: 30%;
-        font-size: 10px;
-    }
+    
+    
+  
 
-    .navigation {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+  }
+
+  .div1 {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .imageheader {
+    margin-top: 0px;
+    width: 55px;
+    height: 40px;
+  }
+
+  .titre {
+    font-size: 30px;
+  }
+
+  .navigation {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .p1header {
+    position: absolute;
+    top: 82%;
+    right: 42%;
+  }
+
+  .p2header {
+    position: absolute;
+    top: 90%;
+    right: 42%;
+  }
     .div1section2{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -371,10 +409,87 @@ html{
         width: 20px;
     }
     .titre{
-        font-size: 10px;
+        font-size: 30px;
     }
-.footer{
+     .footer { padding: 60px 20px ;  width: 110%;}
+  .div1footer { display: flex;
+    flex-direction: column ;
+     gap: 35px; 
+     text-align: center ; }
+  .div3footer { justify-content: center ; }
+  .p1footer { font-size: 15px; flex-direction: column ; }
+  .div4footer { justify-content: center ; }
+  .div10footer { flex-direction: column ; gap: 15px; align-items: center ; }
+  .div11footer { margin-right: 0px ; gap: 15px ; }
+
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    margin-left: 4px;
+    gap: 10px;
     display: flex;
-    justify-content: center;
-}
-}
+    flex-direction: row;
+    position: relative;
+  }
+
+  .imageheader {
+    width: 50%;
+    height: 40px;
+    margin-bottom: 20px;
+
+  }
+
+  .titre {
+    font-size: 30px;
+  }
+
+  .div1 {
+    /* width: 30%; */
+
+  }
+
+  .btn {
+    width: 50%;
+    /* padding: 0px 50px; */
+    font-size: 10px;
+  }
+
+  .navigation {
+    gap: 19px;
+    margin-left: 60px;
+
+
+  }
+
+  .section1 {
+    width: 118%;
+    margin-left: 15px;
+  }
+
+  .p1header {
+    position: absolute;
+    top: 8px;
+    right: -78px;
+  }
+  .p2header{
+    position: absolute;
+    top: 8px;
+    right: -114px;
+  }
+  .div1section2{margin-left: 25%;
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .footer {
+    width: 120%;
+    padding: 20px;
+  }
+
+  .linefooter {
+    margin-top: 10px;
+  }g
+  }
