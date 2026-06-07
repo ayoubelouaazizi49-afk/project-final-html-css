@@ -523,7 +523,7 @@
   border-top: 1px solid white;
   width: 97%;
   margin-left: 20px;
-  /* margin-top: 2%; */
+  margin-top: 15px;
 }
 
 .div10footer {
@@ -563,10 +563,10 @@ html {
 /* !responsive */
 /*  *responsivitymobile*/
 @media (max-width: 320px) {
-  body {
+  /* body {
     overflow-x: hidden;
-    /* Ka-thmi l-shasha makkhalich l-ktaba tkhraj l-gneb */
-  }
+  
+  } */
 
   .header {
     display: flex ;
@@ -576,19 +576,31 @@ html {
     margin: 10px auto ;
     text-align: center ;
   }
-  .div1 { justify-content: center; width: 100%; }
-  .imageheader { margin-top: 0px; width: 55px; height: 40px; }
+  
+  .titreheader{
+    font-size: 30px;
+    width: 50%;
+    
+  }
+  .div1 { justify-content: center; width: 100%; gap: 0px;}
+  .imageheader { margin-top: 18px; width: 40%; height: 0%; }
   .navigation { width: 100%; margin-right: 0; justify-content: center; gap: 15px; flex-wrap: wrap; }
 
-  /* --- 2. Section 1 (Hero) --- */
+  
   .section1 { padding: 30px 10px; }
   .section1 .titre { font-size: 32px; line-height: 1.2; }
-
-  /* --- 3. Section 2 (About & Progress Bars) --- */
+.div2section2{
+  position: relative;
+}
+ 
   .section2 { width: 100%; padding: 15px 10px; position: relative; }
-  .div1section2 { display: flex ; flex-direction: column ; gap: 30px ;  }
-  .image1section2 { width: 100% ; height: auto ; }
-  .image2section2 { position: absolute ; left: 140px ; top:170px ; margin-top: 15px ; width: 50% ; height: auto; }
+  .div1section2 { display: flex ;
+     flex-direction: column ;
+      gap: 30px ;  }
+  .image1section2 { width: 100% ; }
+  .image2section2 { position: absolute ;
+     right: 20px ; top:10% ;
+      width: 100%;}
   .div3section2 { padding: 10px 0; }
   .p1div3section2 { font-size: 22px; }
   .p2div3section2 { font-size: 14px; }
@@ -596,22 +608,22 @@ html {
   .div6section2 { flex-direction: row; gap: 15px; display: flex; justify-content: space-between;}
   .div7section2, .div8section2, .div9section2, .div10section2, .div11section2 { width: 100% ; }
 
-  /* --- 4. Section 3 (Team Cards) --- 🛠️ REBUILT FROM SCRATCH FOR MOBILE */
   .section3 {
-    padding: 30px 10px ;
+    padding: 70px 10px ;
   }
   
   .p1section3 {
     font-size: 26px ;
   }
 
-  .div1section3 {
-    display: flex;
-    flex-direction: column ; /* Rj3at wahed tteht wahed bzezz */
-    /* gap: 20px ;            Masafa m9adda bin card w card */
-    padding: 0px ;
-    /* margin-top: 40px ; */
-    width: 100% ;
+  .div1section3 { 
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto;   
+  gap: 20px;            
+  padding: 0px;
+  width: 100%;
+
   }
 
   .div2section3 {
@@ -619,36 +631,31 @@ html {
     max-width: 260px ;
     margin: 0 auto ;
     display: flex ;
-    flex-direction: column; /* Visual content flows down */
+    flex-direction: column; 
     align-items: center ;
     position: relative ;
     background-color: transparent ;
   }
-
-  /* L-brique l-zarqa dyal desktop */
   .div3section3 {
     width: 100% ;
-    padding: 0px; /* Hyedna padding kbir li blocka l-layout */
-    height: 140px; /* Rddnah b hجم m9add fixed */
+    padding: 0px; 
+    height: 140px; 
     background-color: rgb(185, 222, 228) ;
     border-radius: 10px ;
     position: relative ;
-    margin-top: 100px ; /* Khellina l-khwa l-tswira l-faw9 */
+    margin-top: 100px ; 
   }
 
-  /* Tswira dyal l-khaddamt (Team Member) */
   .image1section3 {
     position: absolute ;
-    top: 61px ; /* Tala3na tswira l-faw9 t-ghtti l-morabba3 */
+    top: 61px ; 
     left: 5% ;
     width: 90%  ;
     height: 180px ;
     object-fit: contain;
   }
-
-  /* L-ktaba dyal l-onwan teht l-card */
   .h2section3 {
-    margin-top: 10px ; Habbatna l-ktaba bach tji teht tswira
+    margin-top: 10px ;
     margin-left: 0px ;
     font-size: 18px;
   }
@@ -666,7 +673,7 @@ html {
     width: 100% ;
   }
 
-  /* --- 5. Section 4 & 5 (Call to Action) --- */
+ 
   .section4 { padding: 30px 15px; flex-direction: column ; gap: 20px; }
   .p1section4 { font-size: 20px; }
   .section5 { padding: 25px 15px ; flex-direction: column ; gap: 20px ; text-align: center ; }
@@ -711,7 +718,6 @@ html {
 
   .btn {
     width: 100%;
-    /* padding: 0px 50px; */
     font-size: 10px;
   }
 
@@ -730,7 +736,6 @@ html {
     width: 100%;
     gap: 10%;
     position: relative;
-
   }
 
   .div2section2 {
@@ -741,12 +746,10 @@ html {
 
   .div3section2 {
     width: 50%;
-
   }
 
   .image1section2 {
     width: 120%;
-    /* height: 20%; */
   }
 
   .image2section2 {
